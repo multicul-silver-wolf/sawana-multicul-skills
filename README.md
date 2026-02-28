@@ -1,32 +1,66 @@
 # sawana-multicul-skills
 
-Public brand repository for Sawana’s daily-use AI skills.
+Battle-tested AI skills by **multicul-silver-wolf**.
 
-This repo is designed for two goals:
-- bootstrap new projects quickly with reusable skills
-- share practical, battle-tested skills in public
+This repository is structured for direct discovery/install via **skills.sh** and `npx skills add`.
 
-## Naming Convention
+## Install
 
-- Local folder: `skills/<skill-name>`
-- Recommended public slug: `sawana-multicul-<skill-name>`
-- Recommended display name: `sawana-multicul/<skill-name>`
+Install all skills from this repo:
 
-## Structure
+```bash
+npx skills add multicul-silver-wolf/sawana-multicul-skills
+```
 
-- `skills/` — one folder per skill
-- Each skill must include `SKILL.md`
-- Keep skill-specific scripts/resources inside the same skill folder
+Install a specific skill:
 
-## Current Skills
+```bash
+npx skills add multicul-silver-wolf/sawana-multicul-skills --skill official-docs-to-mdx
+```
 
-- `skills/official-docs-to-mdx/` — fetch official docs and normalize them into clean local `.mdx` snapshots.
+## Skills in this repo
 
-## Curated External Skills
+### 1) official-docs-to-mdx
 
-These are skills I frequently use but do not author myself.
+Path: `skills/official-docs-to-mdx`
 
-See: [CURATED_SKILLS.md](./CURATED_SKILLS.md)
+Convert official docs URLs into clean local `.mdx` snapshots with normalized frontmatter (`title`, `description`, `sourceUrl`, `retrievedAt`).
+
+Use it when you need to:
+- mirror official docs into your local knowledge base
+- prepare stable markdown/mdx input for RAG
+- refresh docs snapshots reproducibly from upstream URLs
+
+## Quick example
+
+```bash
+scripts/mdnew_to_mdx.sh \
+  https://docs.convex.dev/agents/agent-usage \
+  docs/convex/agent-usage.mdx
+```
+
+## Repository structure
+
+```text
+skills/
+  <skill-name>/
+    SKILL.md            # required
+    scripts/            # optional
+    references/         # optional
+    assets/             # optional
+```
+
+## Compatibility
+
+Designed to work with agents supported by the `skills` ecosystem (for example: OpenClaw, Codex, Cursor, Claude Code, OpenCode).
+
+## Curated external skills
+
+See [CURATED_SKILLS.md](./CURATED_SKILLS.md).
+
+## Maintainer
+
+- GitHub: [@multicul-silver-wolf](https://github.com/multicul-silver-wolf)
 
 ## License
 
