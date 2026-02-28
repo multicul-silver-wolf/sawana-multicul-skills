@@ -22,6 +22,12 @@ This repo is designed for two goals:
 
 - `skills/official-docs-to-mdx/` — fetch official docs and normalize them into clean local `.mdx` snapshots.
 
+## Curated External Skills
+
+These are skills I frequently use but do not author myself.
+
+See: [CURATED_SKILLS.md](./CURATED_SKILLS.md)
+
 ## License
 
 MIT
