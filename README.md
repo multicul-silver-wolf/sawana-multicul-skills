@@ -1,23 +1,27 @@
 # sawana-multicul-skills
 
-Minimal skill repository for Sawana/Multicul.
+Public brand repository for Sawana’s daily-use AI skills.
+
+This repo is designed for two goals:
+- bootstrap new projects quickly with reusable skills
+- share practical, battle-tested skills in public
+
+## Naming Convention
+
+- Local folder: `skills/<skill-name>`
+- Recommended public slug: `sawana-multicul-<skill-name>`
+- Recommended display name: `sawana-multicul/<skill-name>`
 
 ## Structure
 
-- `skills/official-docs-to-mdx/` — download and normalize official documentation pages into local `.mdx` files.
-
-## Conventions
-
-- One skill per folder under `skills/`
+- `skills/` — one folder per skill
 - Each skill must include `SKILL.md`
-- Keep scripts/resources inside the skill folder
-- Keep this repo minimal and easy to publish/update via ClawHub
+- Keep skill-specific scripts/resources inside the same skill folder
 
-## Publish (example)
+## Current Skills
 
-```bash
-clawhub publish ./skills/official-docs-to-mdx \
-  --slug sawana-multicul-official-docs-to-mdx \
-  --name "sawana-multicul/official-docs-to-mdx" \
-  --version 1.0.0
-```
+- `skills/official-docs-to-mdx/` — fetch official docs and normalize them into clean local `.mdx` snapshots.
+
+## License
+
+MIT
