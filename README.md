@@ -31,6 +31,15 @@ Use it when you need to:
 - prepare stable markdown/mdx input for RAG
 - refresh docs snapshots reproducibly from upstream URLs
 
+### 2) browser-operation-guard
+
+Path: `skills/browser-operation-guard`
+
+Enforce a consistent browser workflow for manual and automated web tasks:
+- always open/attach browser via OpenClaw browser tooling first (credential/session reuse)
+- perform page interactions with agent-browser workflow
+- when errors happen, run `--help` first before retrying
+
 ## Quick example
 
 ```bash
