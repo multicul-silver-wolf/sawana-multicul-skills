@@ -16,6 +16,7 @@ Install a specific skill:
 
 ```bash
 npx skills add multicul-silver-wolf/sawana-multicul-skills --skill official-docs-to-mdx
+npx skills add multicul-silver-wolf/sawana-multicul-skills --skill project-memory-system
 ```
 
 ## Skills in this repo
@@ -40,12 +41,23 @@ Enforce a consistent browser workflow for manual and automated web tasks:
 - perform page interactions with agent-browser workflow
 - when errors happen, run `--help` first before retrying
 
-## Quick example
+### 3) project-memory-system
 
-```bash
-scripts/mdnew_to_mdx.sh \
-  https://docs.convex.dev/agents/agent-usage \
-  docs/convex/agent-usage.mdx
+Path: `skills/project-memory-system`
+
+Bootstrap and maintain repository memory conventions around `AGENTS.md`, `MEMORY.md`, and `.memory/*.md`:
+- set up or audit layered memory files for long-term and domain-specific knowledge
+- keep `.memory/index.md` and `.memory/template.md` consistent with actual domain files
+- record durable user corrections and reusable project decisions in the right memory layer
+
+## Quick usage prompt examples
+
+```text
+Use official-docs-to-mdx to snapshot https://docs.convex.dev/agents/agent-usage into docs/convex/agent-usage.mdx with clean frontmatter.
+```
+
+```text
+Use project-memory-system in this repo. Audit AGENTS.md / MEMORY.md / .memory, then bootstrap missing files and sync .memory/index.md.
 ```
 
 ## Repository structure

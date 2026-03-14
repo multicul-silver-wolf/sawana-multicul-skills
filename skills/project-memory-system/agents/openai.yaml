@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Memory System"
+  short_description: "Set up and maintain a repository-specific memory system."
+  default_prompt: "Build or maintain this repository's project memory system."
