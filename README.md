@@ -16,7 +16,9 @@ Install a specific skill:
 
 ```bash
 npx skills add multicul-silver-wolf/sawana-multicul-skills --skill official-docs-to-mdx
+npx skills add multicul-silver-wolf/sawana-multicul-skills --skill browser-operation-guard
 npx skills add multicul-silver-wolf/sawana-multicul-skills --skill project-memory-system
+npx skills add multicul-silver-wolf/sawana-multicul-skills --skill excalidraw-skill
 ```
 
 ## Skills in this repo
@@ -49,6 +51,15 @@ Bootstrap and maintain repository memory conventions around `AGENTS.md`, `MEMORY
 - set up or audit layered memory files for long-term and domain-specific knowledge
 - keep `.memory/index.md` and `.memory/template.md` consistent with actual domain files
 - record durable user corrections and reusable project decisions in the right memory layer
+
+### 4) excalidraw-skill
+
+Path: `skills/excalidraw-skill`
+
+Programmatic Excalidraw workflow for building and refining diagrams with iterative visual checks:
+- draw/update/delete elements with stable IDs via MCP tools (or REST fallback)
+- run screenshot-based quality checks each iteration (text fit, overlap, arrow routing, spacing)
+- export/import diagrams and snapshots for repeatable diagrams-as-code workflows
 
 ## Quick usage prompt examples
 
